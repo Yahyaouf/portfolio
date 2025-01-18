@@ -1,0 +1,33 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+.progress{
+    height: 100px;
+    width:100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position:relative;
+    box-shadow: 6px 6px 10px -1px rgb(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(199, 186, 186, 0.7) ;
+    cursor: pointer;
+}
+.percent{
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    background-color:white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    box-shadow: inset 6px 6px 10px -1px rgb(0,0,0,0.15),
+    -6px -6px 10px -1px rgb(255, 255, 255,0.7)  ;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-overlay"></div>
+      <div class="radial-overlay"></div>
+    </div>
+    <nav>
+      <div class="inner-nav">
+        <ul>
+          <li data-tab="home"> Home </li>
+          <li data-tab="about">  About</li>
+          <li data-tab="projects"> Projects</li>
+          <li data-tab="contact"> Contact </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="tab home">
+      <canvas id="homeCanvas"></canvas>
+      <div class="home-content">
+        <div class="home-content-text">
+          <div class="text-typing">
+            <h1>Hi I'm</h1>
+            <h1><span class="typing-text-animation"></span></h1>
+          </div>
+          <h1>Front end</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, ex
+            ipsa! Ducimus molestias debitis fugiat ut exercitationem obcaecati,
+            consequuntur, pariatur magnam modi autem eos eius beatae at numquam
+            dignissimos omnis!
+          </p>
+          <div class="btns-profile">
+            <div class="btn-more">Learn More</div>
+          <div class="btn-more">Show projects</div>
+          </div>
+        </div>
+        <div class="img-content center">
+          <canvas class="img-profile" width="300" height="300"></canvas>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="tab about">
+      <h3>langages</h3>
+      <div class="langages">
+
+        <img src="imgs/c.png" alt="">
+        <img src="imgs/c++.png" alt="">
+        <img src="imgs/cSH.png" alt="">
+        <img src="imgs/java-script.png" alt="">
+        <img src="imgs/java.png" alt="">
+        <img src="imgs/php.png" alt="">
+        <img src="imgs/sql.png" alt="">
+      </div>
+      <h3>frameworks</h3>
+      <div class="frameworks">
+        <img src="imgs/physics.png" alt="">
+        <img src="imgs/ang.png" alt="">
+        <img src="imgs/vuejs.png" alt="">
+      </div>
+      <h3>others</h3>
+      <div class="others">
+        <img src="imgs/mysql.png" alt="">
+        <img src="imgs/node-js.png" alt="">
+      </div>
+      <div class="progress1">
+        <div class="percent1"><h2 id="degre1"></h2><small>%</small></div>
+    </div>
+    <div class="progress2">
+      <div class="percent1"><h2 id="degre2"></h2><small>%</small></div>
+  </div>
+  <h3 class="left">data analyst</h3>
+  <h3 class="right">problems solving <br> and algorithm</h3>
+    </section>
+    <section id="projects" class="center tab projects">
+      <div class="center myprojects">
+        <div class="pro calculator"><a href="https://yahyaouf.github.io/projects/calculator/calc.html"><i class="fa-solid fa-calculator"></i></a></div>
+        <div class="pro mathkids"><a href="https://yahyaouf.github.io/projects/game_calculate/game.html"> <div class="grid"> <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i><i class="fa-solid fa-xmark"></i><i class="fa-solid fa-divide"></i></div></a></div>
+        <div class="pro flipflap"><a href="https://yahyaouf.github.io/projects/NEW_GAME/game.html"><i class="fa-solid fa-brain"></i></a></div>
+        <div class="pro xo"><a href="https://yahyaouf.github.io/projects/game_xo/yahya.html"><i class="fa-solid fa-gamepad"></i></a></div>
+        <div class="pro restau"><a href=""><i class="fa-solid fa-utensils"></i></a></div>
+      </div>
+      <div class="buttons">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </section>
+    <section id="contact" class="tab contact">
+      <h3 class="thanks">THANK YOU FOR WATCHING MY PORTFOLIO</h3>
+      <form action="">
+        <input type="email" class="email"  placeholder="enter your email">
+        <input type="text" class="text"  placeholder="your point of view">
+        <input type="submit" class="submit">
+      </form>
+      <div class="brands"> 
+        <i class="brand fa-brands fa-facebook"></i>
+        <i class="brand fa-brands fa-instagram"></i>
+        <i class="brand fa-brands fa-linkedin"></i>
+        <i class="brand fa-brands fa-github"></i>
+      </div>
+     
+    </section>
+    <script src="particles.js"></script>
+    <script src="img.js"></script>
+    <script src="script.js"></script>
+    <script src="prog.js"></script>
+  </body>
+</html>
